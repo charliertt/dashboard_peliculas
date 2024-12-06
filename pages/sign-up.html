@@ -1,0 +1,190 @@
+<!--
+=========================================================
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800" rel="stylesheet" />
+  <link href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+  <!-- ParsleyJS -->
+  <link href="https://cdn.jsdelivr.net/npm/parsleyjs/dist/parsley.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/parsleyjs/dist/parsley.min.js"></script>
+
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  
+  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.1.0" rel="stylesheet" />
+
+</head>
+  
+  <!--     Fonts and icons     -->
+  
+  
+</head>
+
+<body class="bg-dark" >
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent mt-4">
+    <div class="container">
+      <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-white" href="">
+        Dashboard ARAIC
+      </a>
+      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ms-auto me-auto me-xl-7 d-flex justify-content-center">
+         
+          
+        
+        </ul>
+        <li class="nav-item d-flex align-items-center">
+          <a class="btn btn-round btn-sm mb-0 btn-outline-white me-2"  href="proyecto/single.html">Catalogo</a>
+        </li>
+        <ul class="navbar-nav d-lg-block d-none">
+          <li class="nav-item">
+            <a href="proyecto/index.html" class="btn btn-sm btn-round mb-0 me-1 bg-gradient-light">Películas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <main class="main-content  mt-0">
+    <section class="min-vh-100 mb-8">
+      <div class="page-header align-items-start min-vh-70 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../assets/img/curved-images/WICK.jpeg'); border: 2px solid white; background-size: 60% 100%;">
+        <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 text-center mx-auto">
+              <h1 class="text-white mb-2 mt-5">¡Bienvenido!</h1>
+              <p class="text-lead text-white mt-4">Crea de forma gratuita una cuenta o ingresa desde una ya existente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-lg-n16 mt-md-n11 ">
+          
+          <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+            <div class="card z-index-0">
+              <div class="card-header text-center pt-4">
+                <h5>Registrate</h5>
+              </div>
+              
+              <div class="card-body">
+                <form id="registroForm" role="form text-left" data-parsley-validate>
+
+                  <!-- Campo de nombre -->
+                  <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Name" aria-describedby="nombre-addon" required  data-parsley-required="true" data-parsley-minlength="3" data-parsley-trigger="keyup" data-parsley-error-message="Debe ser un usuario válido (minimo de 3 caracteres, solo se permiten letras, números, guiones bajos y guiones)">
+                  </div>
+                  
+                  <!-- Campo de correo electrónico -->
+                  <div class="mb-3">
+                      <input type="email" class="form-control" placeholder="E-mail" aria-label="Email" aria-describedby="email-addon" required data-parsley-type="email" data-parsley-required="true" data-parsley-error-message="Por favor, ingresa un correo electrónico válido.">
+                  </div>
+                  
+                  <!-- Campo de contraseña -->
+                  <div class="mb-3">
+                    <input type="password" class="form-control" id="clave" name="clave" placeholder="Contraseña" required 
+                    data-parsley-minlength="8" 
+                    data-parsley-error-message="La clave debe tener al menos 8 caracteres" 
+                    data-parsley-trigger="keyup" 
+                        >
+                </div>
+                
+                  
+                  
+                  <!-- Términos y condiciones (checkbox) -->
+                 
+                  
+                  <!-- Botón de enviar -->
+                  <div class="text-center">
+                      <button type="submit" class="btn bg-gradient-dark w-100 my-4 mb-1">Registrarme</button>
+                  </div>
+                  
+                  <!-- Enlace para ingresar si ya tienes cuenta -->
+                  <p class="text-center text-sm mt-1 mb-0">¿Ya tienes una cuenta? <a href="sign-in.html" class="text-dark font-weight-bolder">Ingresa aquí</a></p>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mb-4 mx-auto text-center">
+            <a href="proyecto/index.html" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+              ARAIC
+            </a>
+           
+            <a href="proyecto/somos.html" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+              Nosotros
+            </a>
+            <a href="proyecto/single.html" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+              Películas
+            </a>
+          
+          </div>
+          <div class="col-lg-8 mx-auto text-center mb-4 mt-2">
+            <a href="javascript:;" class="text-secondary me-xl-4 me-4">
+              <span class="text-lg fab fa-dribbble"></span>
+            </a>
+            <a href="javascript:;" class="text-secondary me-xl-4 me-4">
+              <span class="text-lg fab fa-twitter"></span>
+            </a>
+            <a href="javascript:;" class="text-secondary me-xl-4 me-4">
+              <span class="text-lg fab fa-instagram"></span>
+            </a>
+            <a href="javascript:;" class="text-secondary me-xl-4 me-4">
+              <span class="text-lg fab fa-pinterest"></span>
+            </a>
+            <a href="javascript:;" class="text-secondary me-xl-4 me-4">
+              <span class="text-lg fab fa-github"></span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 mx-auto text-center mt-1">
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+  </main>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/validacion.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+ 
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.1.0"></script>
+
+  
+
+
+
+</body> 
+
+</html>
